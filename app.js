@@ -40,10 +40,10 @@ app.post('/signup', (req, res) => {
     const postData = JSON.stringify(data);
 
     const options = {
-        url: 'https://us6.api.mailchimp.com/3.0/lists/25a3986624',
+        url: 'https://us6.api.mailchimp.com/3.0/lists/<Audience_Key>',
         method: 'POST',
         headers: {
-            Authorization: 'auth fd2d3a41c63a6ff7c581a356a661b87e-us6'
+            Authorization: 'auth <mailchimp api key>'
         },
         body: postData
     }
